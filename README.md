@@ -125,26 +125,6 @@ yarn test
   npm run wasm:clean && npm run wasm:build && npm test
   ```
 
-### Expected Test Output
-
-All tests should pass:
-```
-  Queries
-    Sync Parsing
-      ✓ should return a single-item parse result for common queries
-      ✓ should support parsing multiple queries
-      ✓ should not parse a bogus query
-    Async parsing
-      ✓ should return a promise resolving to same result
-      ✓ should reject on bogus queries
-    Deparsing
-      ✓ async function should return a promise resolving to same SQL
-      ✓ sync function should return a same SQL
-      [... more tests ...]
-
-  18 passing (70ms)
-```
-
 ## Documentation
 
 ### `parseQuery(sql: string): Promise<ParseResult[]>`
